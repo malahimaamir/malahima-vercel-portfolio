@@ -1,19 +1,39 @@
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+$(document).ready(function() {
+
+    // Transition effect for navbar and back-to-top icon
+    $(window).scroll(function() {
+      // checks if window is scrolled more than 500px, adds/removes solid class
+      if($(this).scrollTop() > 550) { 
+          $('.navbar').addClass('solid');
+          $('.back-to-top').addClass('visible'); 
+      } else {
+          $('.navbar').removeClass('solid');
+          $('.back-to-top').removeClass('visible');  
+      }
+
     });
-});
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+    // Scrolling effect for Arrow icons
+    $("#scrollIcon").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#about"), 1000);
+    });
+    $("#nav-about").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#about"), 1000);
+    });
+    $("#nav-portfolio").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#portfolio"), 1000);
+    });
+    $("#nav-contact").click(function(e) {
+        e.preventDefault();
+        $.scrollTo($("#contact"), 1000);
+    });
+    $(".navbar-brand").click(function(e) {
+        e.preventDefault();
+        $.scrollTo(0, 1000);
+    });
+      
+  });
