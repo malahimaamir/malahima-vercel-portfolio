@@ -73,7 +73,7 @@ body > .container-fluid {
   background-color: transparent;
   background: transparent;
   border: none;
-  color: #f0f0e6;
+  color: #04786c;
   z-index: 100;
   margin-bottom: 0;
   border-radius: 0;
@@ -82,46 +82,45 @@ body > .container-fluid {
 .navbar-brand {
   display: none;
   margin-top: 10px;
-  color: #f0f0e6;
+  color: #04786c;
   font-weight: 400; }
 
 .navbar-default .navbar-nav > li > a {
-  color: #f0f0e6;
+  color: #04786c;
   font-weight: 500;
   font-size: 1em;
   text-transform: lowercase;
   margin: 10px 5px 5px 5px;
   border-radius: 5px; }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-  color: #f0f0e6;
-  border: 1px solid #f0f0e6; }
+  color: #04786c;
+  border: 1px solid #04786c; }
 .navbar-default .navbar-nav > li > a:visited {
-  color: #f0f0e6;
+  color: #ffffff;
   text-decoration: none; }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
-  color: #f0f0e6; }
+  color: #04786c; }
 .navbar-default .navbar-toggle {
-  border-color: #f0f0e6; }
+  border-color: #04786c; }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #07374a; }
   .navbar-default .navbar-toggle .icon-bar {
-    color: #f0f0e6;
-    background-color: #f0f0e6; }
+    color: #a1a13a;
+    background-color: #a3a329; }
 .navbar-default .navbar-collapse.collapse.in ul {
   background-color: #07374a; }
 
 /* Solid class attached on scroll past first section */
 .navbar.solid {
-  background-color: #07374a;
-  transition: background-color 1s ease 0s;
+  background-color: #07374a;  
   box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
   .navbar.solid .navbar-brand {
     display: inline-block;
-    color: #f0f0e6;
+    color: #289fc6;
     transition: color 1s ease 0s; }
   .navbar.solid .navbar-nav > li > a {
-    color: #f0f0e6;
+    color: #02505f;
     transition: color 1s ease 0s; }
 
 .cover {
